@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória Espacial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da Memória Espacial</h1>
+
+        <div id="main-menu" class="menu active">
+            <h2>Escolha o Tipo de Jogo:</h2>
+            <button id="no-limit-btn">Sem Limite</button>
+            <button id="time-limit-btn">Limite de Tempo</button>
+            <button id="moves-limit-btn">Limite de Movimentos</button>
+        </div>
+
+        <div id="difficulty-menu" class="menu hidden">
+            <h2>Escolha a Dificuldade:</h2>
+            <button id="easy-btn">Fácil</button>
+            <button id="medium-btn">Médio</button>
+            <button id="hard-btn">Difícil</button>
+        </div>
+
+        <div id="game-board" class="game-board hidden">
+            <div class="game-info">
+                <p id="timer" class="hidden">Tempo: 0s</p>
+                <p id="moves" class="hidden">Movimentos: 0</p>
+            </div>
+            <div id="cards-container" class="cards-container">
+                </div>
+            <button id="restart-btn" class="hidden">Jogar Novamente</button>
+        </div>
+
+        <div id="game-over-screen" class="game-over-screen hidden">
+            <h2>Fim de Jogo!</h2>
+            <p id="game-over-message"></p>
+            <button id="play-again-btn">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
